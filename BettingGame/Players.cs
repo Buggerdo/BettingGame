@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BettingGame
 {
-    internal class Player
+    internal class Players
     {
         public string Name;
         public int Cash;
@@ -37,7 +37,7 @@ namespace BettingGame
             }
             if(amount > Cash)
             {
-                Console.WriteLine(Name + " says: " + "I don't have enought case to give you " + amount);
+                Console.WriteLine(Name + " says: " + "I don't have enought cash to give you " + amount);
                 return 0;
             }
             Cash -= amount;
