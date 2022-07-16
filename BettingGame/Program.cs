@@ -2,9 +2,14 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Hello, World!");
+
+            const double odds = 0.75;
+
+            Player Player = new(){ Cash = 1000, Name = "Player" };
+            Console.WriteLine($"Welbome to the casino. The odds are {odds}");
+            Player.WriteMyInfo();
         }
     }
 }
